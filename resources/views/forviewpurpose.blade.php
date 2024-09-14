@@ -29,6 +29,6 @@
 </div> -->
 
 
-
+<x-message-banner msg="loged out successfuly"/>
 
     
