@@ -15,7 +15,10 @@ class UserController extends Controller
 
     function nametwo(){
         // return "tayyab";
-        return view('forviewpurpose');
+        $name = "bzura";
+        $users = ['anil', "bazure","sheraz"];
+        return view('forviewpurpose',["name"=>$name],["users"=>$users]);
+        
     }
 
     function namethree($name){
