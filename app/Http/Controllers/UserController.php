@@ -9,6 +9,10 @@ class UserController extends Controller
 {
     //
 
+    function aboutt(){
+        return view('aboutt');
+    }
+
     function name(){
         return "sheraz";
     }

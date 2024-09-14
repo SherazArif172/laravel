@@ -21,6 +21,7 @@ Route::get('/nametwo', [UserController::class,"nametwo"]);
 
 Route::get('/namethree/{name}', [UserController::class,"namethree"]);
 Route::get('/admin', [UserController::class,"admin"]);
+Route::get('/aboutt', [UserController::class,"aboutt"]);
 
 
 
