@@ -39,6 +39,23 @@ class UserController extends Controller
             echo "it does not exists";
         }
     }
+
+
+    function addUser(Request $req){
+        echo "added";
+        echo $req->name;
+        echo "<br>";
+        echo $req->email;
+        echo "<br>";
+        echo $req->city;
+        $req->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'city'=>'required',
+
+        ]);
+        // echo "ok";
+    }
     
   
 }

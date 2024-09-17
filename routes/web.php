@@ -24,4 +24,5 @@ Route::get('/admin', [UserController::class,"admin"]);
 Route::get('/aboutt', [UserController::class,"aboutt"]);
 
 
-
+Route::view("form","form");
+Route::post("form",[UserController::class,"addUser"]);
