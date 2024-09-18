@@ -29,3 +29,4 @@ Route::post("form",[UserController::class,"addUser"]);
 
 
 Route::view("age","ageCheck");
+Route::get("users",[UserController::class,"users"]);
