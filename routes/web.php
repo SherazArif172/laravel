@@ -26,3 +26,6 @@ Route::get('/aboutt', [UserController::class,"aboutt"]);
 
 Route::view("form","form");
 Route::post("form",[UserController::class,"addUser"]);
+
+
+Route::view("age","ageCheck");
