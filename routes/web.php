@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudentsController;
 
 Route::get('/', function () {
     return view('new');
@@ -30,3 +31,5 @@ Route::post("form",[UserController::class,"addUser"]);
 
 Route::view("age","ageCheck");
 Route::get("users",[UserController::class,"users"]);
+
+Route::get('students',[StudentsController::class,"students"]);
