@@ -61,7 +61,24 @@ class UserController extends Controller
 
     function users(){
       $users =  DB::select('select * from users');
+    // return DB::table('users')->get();      // how to get
       return view('users',['users'=>$users]);
+
+
+//    $data= DB::table('users')->insert([
+//         'id'=>'3',
+//         'name'=>"tayyab",
+//         'email'=>"this@gmail.com",
+//         'city'=>"lahore"
+//     ]);
+//     if ($data) {
+//         # code...
+//         echo "data has been inserted";
+//     } else {
+//         echo "not inserted";
+//     }
+
+
     }
     
   
